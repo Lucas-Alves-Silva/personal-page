@@ -94,8 +94,9 @@ button a, a:hover {
 #rodape img {
     width: 30px;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: 10px;
+    opacity: 50%;
 }
 
 .dev {
