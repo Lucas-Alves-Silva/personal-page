@@ -1,0 +1,103 @@
+body {
+    background: #1f1b2d;
+    background: -moz-linear-gradient(top,  #1f1b2d 0%, #35202e 100%);
+    background: -webkit-linear-gradient(top,  #1f1b2d 0%,#35202e 100%);
+    background: linear-gradient(to bottom,  #1f1b2d 0%,#35202e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1b2d', endColorstr='#35202e',GradientType=0 );
+}
+
+h1 {
+    color: #DC3545;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: #DC3545;
+    padding: 30px 0 40px 0;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    color: #35202E;
+}
+
+p {
+    color: #35202E;
+}
+
+#logotipo {
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button img {
+    height: 25px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+button a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-head {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #F8F9FA;
+    filter: drop-shadow(0 0 10px #1F1B2D);
+}
+
+.card-text {
+    margin-top: 20px;
+}
+
+.foto {
+    display: flex;
+    margin-left: 19%;
+    margin-top: 12%;
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(0 0 3px #1F1B2D);
+}
+
+.progress {
+    background-color: #1F1B2D;
+}
+
+#rodape {
+    background-color: #1F1B2D;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px 30px 0 0;
+    margin-top: 50px;
+}
+
+#rodape p {
+    color: #f8f9fa60;
+}
+
+#rodape img {
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.dev {
+    margin-top: 16px;
+}
