@@ -1,0 +1,79 @@
+@media screen and (max-width: 991px) {
+    .foto {
+        display: flex;
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-head img {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .foto {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .navbar button {
+        display: none;
+    }
+
+    #iconBurguer {
+        background-color: inherit;
+        border: none;
+        display: flex;
+        width: 35px;
+    }
+
+    #iconBurguer img {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color: #F8F9FA;
+        color: #1F1B2D;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lista ul {
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .lista li {
+        border-bottom: 1px solid #1F1B2D;
+        background-color: #363049;
+        color: #F8F9FA;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .lista ul, li, a {
+        text-decoration: none;
+    }
+
+    .lista li:hover {
+        background-color: #913B42;
+    }
+}

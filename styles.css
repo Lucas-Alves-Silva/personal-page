@@ -31,6 +31,24 @@ p {
     margin-right: auto;
 }
 
+#iconBurguer {
+    display: none;
+    margin-left: auto;
+}
+
+.menu {
+    display: none;
+    color: #F8F9FA;
+    text-align: center;
+    background-color: #F8F9FA;
+    color: #1F1B2D;
+    width: 100%;
+}
+
+.lista > ul {
+    list-style: none;
+}
+
 .navbar {
     background-color: inherit;
     margin-top: 10px;
@@ -51,12 +69,13 @@ button a, a:hover {
 .img-head {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .card {
     background-color: #F8F9FA;
-    filter: drop-shadow(0 0 10px #1F1B2D);
+    margin: 0 5px 0 5px;
 }
 
 .card-text {
@@ -85,21 +104,10 @@ button a, a:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 991px) {
-    .foto {
-        display: flex;
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .foto {
-        display: flex;
-        width: 200px;
-        height: 200px;
-        margin-top: 30px;
-    }
+.card-head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
 }
 
 .progress {
@@ -107,28 +115,20 @@ button a, a:hover {
 }
 
 #rodape {
-    background-color: #1F1B2D;
     display: flex;
-    height: 60px;
+    flex-direction: row;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px 30px 0 0;
-    margin-top: 50px;
-}
-
-#rodape p {
-    color: #f8f9fa60;
+    align-items: center;
 }
 
 #rodape img {
     width: 30px;
     height: 30px;
-    margin-top: 13px;
     margin-left: 10px;
+    margin-bottom: 15px;
     opacity: 80%;
 }
 
-.dev {
-    margin-top: 16px;
+.dev p {
+    color: #f8f9fa60;
 }

@@ -7,14 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./contato.css">
-    <link rel="stylesheet" href="effects.css">
-    <title>Lucas Alves</title>
+    <link rel="stylesheet" href="screen.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Lucas Alves - Desenvolvedor Front-end Web</title>
 </head>
 <body>
     <div class="container">
             <nav class="navbar">
-                <form class="container-fluid justify-content-end">
+                <form class="container-fluid">
                   <img id="logotipo" src="./assets/logotipo.png" alt="Logotipo">
+                  <button id="iconBurguer" onclick="display()"><a href="#"><img src="./assets/menu.png" alt="Menu"></a></button>
+                  <!--Menu Hamburguer-->
+                    <div class="menu">
+                      <div class="lista">
+                        <ul>
+                          <a href="./index.html"><li>Sobre</li></a>
+                          <a href="#projetos" data-bs-toggle="modal" data-bs-target="#projetos"><li>Projetos</li></a>
+                          <a href="#"><li>Contato</li></a>
+                        </ul>
+                      </div> 
+                    </div>
+                  <!-- Fim menu hamburguer-->
                   <button class="btn btn-outline-danger me-2" type="button"><a href="./index.html"><img src="./assets/sobre.png" alt="Sobre mim">Sobre</a></button>
 
                   <!-- Modal Projetos-->
@@ -34,6 +47,7 @@
                         <div class="modal-body">
                             <!--Fotos Projetos-->
                                 <div class="card w-auto" style="background-color: #1F1B2D;">
+                                  <div class="card-head"><img src="./assets/Projeto Company Kids.png" alt="Projeto Company Kids"></div>
                                   <div class="card-body">
                                     <span class="badge text-bg-warning">Requer melhorias</span>
                                     <h5 class="card-title" style="color: #ffffff;">Projeto Company Kids</h5>
@@ -43,15 +57,17 @@
                                 </div><br>
 
                               <div class="card w-auto" style="background-color: #1F1B2D;">
+                                <div class="card-head"><img src="./assets/Pokedex.png" alt="Pokedex - Pokemons"></div>
                                 <div class="card-body">
                                   <span class="badge text-bg-success">Concluído</span>
                                   <h5 class="card-title" style="color: #ffffff;">Desafio da Pokedex</h5>
-                                  <p class="card-text" style="color: #ffffff;">Durante o bootcamp da Digital Innovation One (DIO), foi proposto um desafio para criar uma Pokedex no React.</p>
+                                  <p class="card-text" style="color: #ffffff;">Durante o bootcamp da Digital Innovation One (DIO), foi proposto um desafio para criar uma Pokedex no React conectando uma API.</p>
                                   <a href="https://github.com/Lucas-Alves-Silva/desafio-pokedex" target="_blank" class="btn btn-outline-danger">Acessar</a>
                                 </div>
                               </div><br>
 
                               <div class="card w-auto" style="background-color: #1F1B2D;">
+                                <div class="card-head"><img src="./assets/Tela_cadastro_DIO.png" alt="Clone - Tel de cadastro DIO"></div>
                                   <div class="card-body">
                                     <span class="badge text-bg-success">Concluído</span>
                                     <h5 class="card-title" style="color: #ffffff;">Desafios com React da DIO</h5>
@@ -68,6 +84,7 @@
                               </div><br>
 
                                   <div class="card w-auto" style="background-color: #1F1B2D;">
+                                    <div class="card-head"><img src="./assets/Kanban_GO.png" alt="Projeto To Do List - Kanban GO!"></div>
                                     <div class="card-body">
                                       <span class="badge text-bg-danger">Em desenvolvimento</span>
                                       <h5 class="card-title" style="color: #ffffff;">Projeto Kanban GO!</h5>
@@ -138,7 +155,7 @@
                       <h6 class="card-title">Desenvolvedor Front-end Web</h6>
                       <span class="badge text-bg-danger">Figma</span>
                       <span class="badge text-bg-primary">Lunacy</span>
-                      <span class="badge text-bg-info">Photoshop</span>
+                      <span class="badge text-bg-primary">Photoshop</span>
                       <span class="badge text-bg-success">Corel Draw</span>
                       <span class="badge text-bg-dark">GitHub</span>
                       <p class="card-text">Apaixonado por tecnologia, principalmente pela área de desenvolvimento web, estudo diariamente para obtenção contínua de conhecimentos. Busco sempre aprimorar o que já sei e me dedicar em novas aprendizagens.</p>
@@ -148,65 +165,91 @@
                   </div>
                 </div>
               </div>
-              <h3>Progresso de Experiência</h3>
-              <div class="card-group" style="margin-bottom: 30px;">
+              <h3>Tecnologias</h3>
+              <div class="card-group">
                 <div class="card">
-                  <div class="img-head"><img src="./assets/html.png" class="card-img-top" style="width: 140px; height: 160px;" alt="HTML"></div>
+                  <div class="img-head"><img src="./assets/html.png" class="card-img-top" alt="HTML"></div>
                   <div class="card-body">
                     <h5 class="card-title">HTML</h5>
                   </div>
-                  <div class="card-footer">
+                  <!--<div class="card-footer">
                     <div class="progress">
                       <div class="progress-bar bg-danger" role="progressbar" aria-label="Progresso HTML" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <div class="card">
-                  <div class="img-head"><img src="./assets/css.png" class="card-img-top" style="width: 140px; height: 160px;" alt="CSS"></div>
+                  <div class="img-head"><img src="./assets/css.png" class="card-img-top" alt="CSS"></div>
                   <div class="card-body">
                     <h5 class="card-title">CSS</h5>
                   </div>
-                  <div class="card-footer">
+                  <!--<div class="card-footer">
                     <div class="progress">
                       <div class="progress-bar bg-danger" role="progressbar" aria-label="Progresso CSS" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <div class="card">
-                  <div class="img-head"><img src="./assets/javascript.png" class="card-img-top" style="width: 140px; height: 160px;" alt="Javascript"></div>
+                  <div class="img-head"><img src="./assets/javascript.png" class="card-img-top" alt="Javascript"></div>
                   <div class="card-body">
                     <h5 class="card-title">Javascript</h5>
                   </div>
-                  <div class="card-footer">
+                  <!--<div class="card-footer">
                     <div class="progress">
                       <div class="progress-bar bg-danger" role="progressbar" aria-label="Progresso Javascript" style="width: 5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5%</div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <div class="card">
-                  <div class="img-head"><img src="./assets/bootstrap.png" class="card-img-top" style="width: 180px; height: 160px;" alt="Bootsrap"></div>
+                  <div class="img-head"><img src="./assets/bootstrap.png" class="card-img-top" alt="Bootsrap"></div>
                   <div class="card-body">
                     <h5 class="card-title">Bootstrap</h5>
                   </div>
-                  <div class="card-footer">
+                  <!--<div class="card-footer">
                     <div class="progress">
                       <div class="progress-bar bg-danger" role="progressbar" aria-label="Progresso Bootsrap" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
               </div>
-              <!--Efeitos background CSS-->
-              <div class="elemento1"></div>
-              <div class="elemento2"></div>
-              <!--FIM Efeitos background CSS-->
-
-              <footer id="rodape">
-                <div class="dev">
-                  <p>Desenvolvido por Lucas Alves</p>
-                </div>
-                <a href="https://www.linkedin.com/in/lucasalves-da-silva/" target="_blank"><img src="./assets/linkedin.png" alt="Linkedin"></a>
-              </footer>
     </div><!--Fim div container-->
+
+    <!--DIV WAVES-->
+    <div class="waves">
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+        .path-0{
+          animation:pathAnim-0 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        @keyframes pathAnim-0{
+          0%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 85.4974358974359,199.55641025641026 170.9948717948718,199.11282051282052 253,195 C 335.0051282051282,190.88717948717948 413.5179487179487,183.10512820512818 485,164 C 556.4820512820513,144.89487179487182 620.9333333333332,114.46666666666667 695,134 C 769.0666666666668,153.53333333333333 852.7487179487182,223.02820512820512 946,220 C 1039.2512820512818,216.97179487179488 1142.071794871795,141.42051282051284 1226,126 C 1309.928205128205,110.57948717948717 1374.9641025641026,155.28974358974358 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          25%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 98.06923076923081,172.84358974358975 196.13846153846163,145.6871794871795 279,165 C 361.8615384615384,184.3128205128205 429.5153846153845,250.09487179487184 500,245 C 570.4846153846155,239.90512820512816 643.8000000000001,163.93333333333334 720,133 C 796.1999999999999,102.06666666666668 875.2846153846153,116.1717948717949 960,149 C 1044.7153846153847,181.8282051282051 1135.0615384615385,233.37948717948717 1216,245 C 1296.9384615384615,256.62051282051283 1368.4692307692308,228.31025641025641 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          50%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 94.03589743589743,207.14358974358976 188.07179487179485,214.2871794871795 268,231 C 347.92820512820515,247.7128205128205 413.74871794871785,273.99487179487176 496,261 C 578.2512820512821,248.00512820512824 676.9333333333334,195.73333333333335 762,172 C 847.0666666666666,148.26666666666665 918.5179487179487,153.07179487179488 982,155 C 1045.4820512820513,156.92820512820512 1100.9948717948719,155.9794871794872 1176,163 C 1251.0051282051281,170.0205128205128 1345.502564102564,185.0102564102564 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          75%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 74.37435897435896,186.9923076923077 148.7487179487179,173.9846153846154 219,193 C 289.2512820512821,212.0153846153846 355.3794871794872,263.0538461538461 449,269 C 542.6205128205128,274.9461538461539 663.7333333333333,235.80000000000004 740,228 C 816.2666666666667,220.19999999999996 847.6871794871797,243.74615384615382 919,237 C 990.3128205128203,230.25384615384618 1101.5179487179487,193.2153846153846 1195,182 C 1288.4820512820513,170.7846153846154 1364.2410256410258,185.3923076923077 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          100%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 85.4974358974359,199.55641025641026 170.9948717948718,199.11282051282052 253,195 C 335.0051282051282,190.88717948717948 413.5179487179487,183.10512820512818 485,164 C 556.4820512820513,144.89487179487182 620.9333333333332,114.46666666666667 695,134 C 769.0666666666668,153.53333333333333 852.7487179487182,223.02820512820512 946,220 C 1039.2512820512818,216.97179487179488 1142.071794871795,141.42051282051284 1226,126 C 1309.928205128205,110.57948717948717 1374.9641025641026,155.28974358974358 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+        }</style><defs><linearGradient id="gradient" x1="58%" y1="1%" x2="42%" y2="99%"><stop offset="5%" stop-color="#e05153"></stop><stop offset="95%" stop-color="#35202e"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,200 0,200 C 85.4974358974359,199.55641025641026 170.9948717948718,199.11282051282052 253,195 C 335.0051282051282,190.88717948717948 413.5179487179487,183.10512820512818 485,164 C 556.4820512820513,144.89487179487182 620.9333333333332,114.46666666666667 695,134 C 769.0666666666668,153.53333333333333 852.7487179487182,223.02820512820512 946,220 C 1039.2512820512818,216.97179487179488 1142.071794871795,141.42051282051284 1226,126 C 1309.928205128205,110.57948717948717 1374.9641025641026,155.28974358974358 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+    </div>
+    <footer id="rodape">
+      <div class="dev">
+        <p>Desenvolvido por Lucas Alves</p>
+      </div>
+      <a href="https://www.linkedin.com/in/lucasalves-da-silva/" target="_blank"><img src="./assets/linkedin.png" alt="Linkedin"></a>
+      <a href="https://github.com/Lucas-Alves-Silva" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+    </footer>
+    <!--FIM DIV WAVES-->
+
+    <script src="./actions.js"></script>
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
