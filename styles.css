@@ -36,6 +36,10 @@ p {
     margin-left: auto;
 }
 
+#iconClose {
+    display: none;
+}
+
 .menu {
     display: none;
     color: #F8F9FA;

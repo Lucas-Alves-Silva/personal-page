@@ -16,14 +16,15 @@
             <nav class="navbar">
                 <form class="container-fluid">
                   <img id="logotipo" src="./assets/logotipo.png" alt="Logotipo">
-                  <button id="iconBurguer" onclick="display()"><a href="#"><img src="./assets/menu.png" alt="Menu"></a></button>
+                  <button id="iconBurguer" onclick="display()"><a href="#"><img id="burguer" src="./assets/menu.png" alt="Menu"></a></button>
+                  <button id="iconClose"><a href="#"><img id="close" src="./assets/close.png" alt="Fechar"></a></button>
                   <!--Menu Hamburguer-->
                     <div class="menu">
                       <div class="lista">
                         <ul>
                           <a href="./index.html"><li>Sobre</li></a>
-                          <a href="#projetos" data-bs-toggle="modal" data-bs-target="#projetos"><li>Projetos</li></a>
-                          <a href="#"><li>Contato</li></a>
+                          <a href="projetos" data-bs-toggle="modal" data-bs-target="#projetos"><li>Projetos</li></a>
+                          <a href="contato" data-bs-toggle="modal" data-bs-target="#contato"><li>Contato</li></a>
                         </ul>
                       </div> 
                     </div>
@@ -147,7 +148,7 @@
               <div class="card mb-3 bg-light" style="max-width: 100%;">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <div class="foto"><img src="./assets/eu3.png" alt="Lucas Alves"></div>
+                    <div class="foto"><img src="./assets/eu3.png" alt="Lucas Alves" title="Lucas Alves"></div>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
