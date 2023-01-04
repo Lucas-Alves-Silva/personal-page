@@ -31,6 +31,12 @@ em {
     color: #DC3545;
 }
 
+#text {
+    font-size: 40px;
+    font-weight: 500;
+    color: #DC3545;
+}
+
 #logotipo {
     margin-right: auto;
 }

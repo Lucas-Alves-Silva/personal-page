@@ -15,3 +15,18 @@ function display() { // Quando clicar no botão.
       burguer.src = './assets/menu.png';
   }
 }
+
+var string = "Lucas Alves da Silva"; /* type your text here */
+var array = string.split("");
+var timer;
+
+function frameLooper () {
+  if (array.length > 0) {
+    document.getElementById("text").innerHTML += array.shift();
+  } else {
+    clearTimeout(timer);
+      }
+  loopTimer = setTimeout('frameLooper()',200); /* Velocidade de digitação. */
+
+}
+frameLooper();

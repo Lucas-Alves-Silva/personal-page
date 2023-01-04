@@ -48,6 +48,10 @@
     .lista {
         display: none;
     }
+
+    .card-body {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 470px) {
