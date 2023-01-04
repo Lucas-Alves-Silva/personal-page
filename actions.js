@@ -7,7 +7,7 @@ function display() { // Quando clicar no botão.
   if (visibilidade) {//Se a variável visibilidade for igual a true, então...
       mostrar.style.display = "block";//Mostramos a div..
       visibilidade = false;//alteramos o valor da variável para falso.
-      burguer.src = './assets/close.png';
+      burguer.src = 'https://raw.githubusercontent.com/Lucas-Alves-Silva/personal-page/master/assets/close.png';
   } else {//ou se a variável estiver com o valor false..
       ocultar.style.display = "none";//Ocultamos a div..
       visibilidade = true;//Alteramos o valor da variável para true.
