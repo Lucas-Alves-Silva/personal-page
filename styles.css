@@ -27,6 +27,10 @@ p {
     color: #35202E;
 }
 
+em {
+    color: #DC3545;
+}
+
 #logotipo {
     margin-right: auto;
 }
