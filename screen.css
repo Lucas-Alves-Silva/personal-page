@@ -1,10 +1,19 @@
-@media screen and (min-width: 992px) and (max-width: 7680px) {
+@media screen and (min-width: 471px) and (max-width: 7680px) {
     .menu {
         display: none;
     }
 
     .lista{
         display: none;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navbar button, a {
+        display: flex;
     }
 }
 
