@@ -1,3 +1,13 @@
+@media screen and (min-width: 992px) and (max-width: 7680px) {
+    .menu {
+        display: none;
+    }
+
+    .lista{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .foto {
         display: flex;
@@ -12,6 +22,10 @@
     .menu {
         display: none;
     }
+
+    .lista {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -20,6 +34,10 @@
         width: 200px;
         height: 200px;
         margin-top: 30px;
+    }
+
+    .lista {
+        display: none;
     }
 }
 
@@ -78,5 +96,9 @@
 
     .lista li:hover {
         background-color: #913B42;
+    }
+
+    .modal-footer button {
+        display: block;
     }
 }
