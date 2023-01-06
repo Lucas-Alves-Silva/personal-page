@@ -115,3 +115,22 @@
         display: block;
     }
 }
+
+@media screen and (min-width: 133px) and (max-width: 363px) {
+    .modal-footer {
+        display: flex;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -146,3 +146,23 @@ button a, a:hover {
 .dev p {
     color: #f8f9fa60;
 }
+
+.botao {
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    margin-right: auto;
+    gap: 8px;
+}
+
+#linkedin img {
+    width: 30px;
+}
+
+#github img {
+    width: 30px;
+}
