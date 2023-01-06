@@ -80,6 +80,10 @@ button a, a:hover {
     color: inherit;
 }
 
+.container-fluid {
+    gap: 10px;
+}
+
 .img-head {
     display: flex;
     justify-content: center;
