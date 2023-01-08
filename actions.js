@@ -16,7 +16,7 @@ function display() { // Quando clicar no botão.
   }
 }
 
-var string = "Lucas Alves da Silva"; /* type your text here */
+var string = "Lucas Alves da Silva"; /* Escreva o texto aqui. */
 var array = string.split("");
 var timer;
 
