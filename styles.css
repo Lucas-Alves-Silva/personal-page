@@ -161,13 +161,10 @@ button a, a:hover {
 .social {
     display: flex;
     margin-right: auto;
-    gap: 8px;
+    margin-left: auto;
+    gap: 70px;
 }
 
-#linkedin img {
-    width: 30px;
-}
-
-#github img {
-    width: 30px;
+#linkedin, #github, #whatsapp img {
+    width: 10px;
 }
